@@ -4,4 +4,4 @@ You can find the tutorial followed to create the music player [here](https://you
 This is the app running on an iOS device:  
 ![iOS](images/ios.PNG)
 
-NOTE: The custom drop shadows won't work on an Android device.
+NOTE: The custom drop shadows won't work on an Android device.s
