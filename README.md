@@ -5,4 +5,4 @@ This is the app running on an iOS device:
 ![iOS](images/ios.PNG)
 
 NOTE: The custom drop shadows won't work on Android devices. This is how it'd look:
-![Android](images/android.PNG)
+![Android](images/android.png)
