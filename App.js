@@ -26,7 +26,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <SafeAreaView style={{ alignSelf: "stretch" }}>
-        <View style={{marginHorizontal: 32, marginTop: 32}}>
+        <View style={{marginHorizontal: 32, marginTop: 15}}>
           <View style={styles.topContainer}>
             <NeuMorph size={48}>
               <AntDesign name="arrowleft" size={20} color={gray} />
@@ -43,19 +43,22 @@ export default function App() {
 
           <View style={styles.songArtContainer}>
             <NeuMorph size={300}>
-              <Image source={require('./assets/flower.jpg')} style={styles.songArt} />
+              <Image source={require('./assets/zanaka.png')} style={styles.songArt} />
             </NeuMorph>
           </View>
 
           <View style={styles.songContainer}>
-            <Text style={styles.title}>Lost it</Text>
-            <Text style={styles.artist}>Flume ft. Vic Mensa</Text>
+            <Text style={styles.title}>Dynabeat</Text>
+            <View style={styles.artistAlbumContainer}>
+              <Text style={styles.artist}>Jain</Text>
+              <Text style={styles.album}> - Zanaka (Deluxe)</Text>
+            </View>
           </View>
 
           <View style={styles.trackContainer}>
             <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
               <Text style={styles.time}>1:21</Text>
-              <Text style={styles.time}>3:46</Text>
+              <Text style={styles.time}>2:53</Text>
             </View>
 
             <Slider
@@ -133,9 +136,9 @@ const styles = StyleSheet.create({
   songArt: {
     width: 300,
     height: 300,
-    borderRadius: 150,
+    borderRadius: 10,
     borderColor: "#D7E1F3",
-    borderWidth: 10
+    borderWidth: 5
   },
   songContainer: {
     alignItems: "center"
@@ -149,11 +152,17 @@ const styles = StyleSheet.create({
     fontSize: 14,
     marginTop: 6,
     color: gray,
-    fontWeight: "500"
+    fontWeight: "600"
+  },
+  album: {
+    fontSize: 14,
+    marginTop: 6,
+    color: gray,
+    fontWeight: "400"
   },
   trackContainer: {
-    marginTop: 32,
-    marginBottom: 64
+    marginTop: 30,
+    marginBottom: 30
   },
   time: {
     fontSize: 10,
@@ -163,5 +172,10 @@ const styles = StyleSheet.create({
   controlsContainer: {
     flexDirection: "row",
     justifyContent: "space-around"
+  },
+  artistAlbumContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center"
   }
 });
